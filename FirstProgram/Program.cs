@@ -1,17 +1,16 @@
-﻿internal class Program
+﻿public class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        Console.WriteLine("Hello, Debbie");
+        Console.WriteLine("Give me somehting baby!");
 
-        Console.Write("What is your name?");
-        string name = "";
-        name = Console.ReadLine();
-
-        Console.WriteLine("Hello " + name);
+        string whatever = Console.ReadLine().ToString();
 
 
-        Console.ReadLine();
+        Console.WriteLine(SayAnything(whatever));
+    }
+    
+    public static string SayAnything(string str) {
+        return "I am a potato and my name is" + str.ToString();
     }
 }
